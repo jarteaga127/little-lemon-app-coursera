@@ -1,10 +1,10 @@
-
+import FooterLogo from "../assets/Asset 16@4x-2.png";
 
 const Footer = () => {
     return ( 
         <>
         <footer>
-            <img src="" alt="Little Lemon" />
+            <img src={FooterLogo} alt="Little Lemon" className="footer-logo"/>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
