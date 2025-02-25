@@ -24,13 +24,31 @@ body, button {
 }
 
 body {
- margin: 0 36px; 
  width: 100%;
 }
 
+header {
+  border: 1px solid;
+}
+
 nav ul {
-  justify-content: space-around;
   display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  padding: 8px 16px
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+nav a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
 }
 
 
@@ -40,6 +58,26 @@ nav ul {
   border: none;
   padding: 8px 16px;
   cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-auto-columns: auto;
+  margin: 0 32px;
+}
+
+section h1 {
+  font-size: 2.5em;
+}
+
+.hero-sec, .about-us {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.our-specials {
+  display: grid;
+ 
 }
 
 .specials-menu-card {

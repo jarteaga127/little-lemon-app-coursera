@@ -1,6 +1,6 @@
 import SpecialsMenuCard from "./SpecialsMenuCard";
 
-const Main = () => {
+const MainPage = () => {
     return ( 
         <>
         <main>
@@ -39,4 +39,4 @@ const Main = () => {
      );
 }
  
-export default Main;
+export default MainPage;
