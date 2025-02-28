@@ -1,5 +1,6 @@
 import SpecialsMenuCard from "./SpecialsMenuCard";
 import HeroImage from "../assets/restauranfood.jpg"
+import ReviewCard from "./ReviewCard";
 
 const MainPage = () => {
     return ( 
@@ -25,7 +26,12 @@ const MainPage = () => {
             </section>
             <section className="reviews">
                 <h2>What our customers say</h2>
-                <article></article>
+                <article>
+                    <ReviewCard/>
+                    <ReviewCard/>
+                    <ReviewCard/>
+                    <ReviewCard/>
+                </article>
             </section>
             <section className="about-us">
                 <article>

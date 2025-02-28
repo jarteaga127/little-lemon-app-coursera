@@ -119,12 +119,12 @@ article {
   border-radius: 16px;
 }
 
-.our-specials {
+.our-specials, .reviews {
   margin-top: 36px;
   margin-bottom: 190px;
 }
 
-.our-specials article {
+.our-specials article, .reviews article {
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin: 0 32px;
@@ -163,6 +163,39 @@ article {
 
 .dish-descript {
   margin-bottom: 18px;
+}
+
+.reviews {
+  background-color: var(--main-color);
+}
+
+.review-card {
+  width: 327px;
+  border-radius: 16px 16px 0 0;
+  background-color: #fff;
+padding: 8px 16px 32px;
+}
+
+.review-rating {}
+
+.review-user {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user-avatar img {
+width: 64px;
+border-radius: 32px;
+}
+
+.review-username {
+  font-size: 24px;
+}
+
+.review-descript {
+font-size: 20px;
 }
 
 footer {
