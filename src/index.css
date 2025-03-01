@@ -180,9 +180,9 @@ article {
 padding: 8px 16px 32px;
 }
 
-.review-rating img {
-  width: 33px;
-  color: #d9d9d9;
+.review-rating span {
+ font-size: 32px;
+ color: #d5d5d5;
 }
 
 .review-user {
