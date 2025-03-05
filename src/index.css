@@ -132,7 +132,7 @@ article {
   padding-bottom: 190px;
 }
 
-.our-specials h2, .reviews h2 {
+.our-specials h2, .reviews h2, .about-us {
   margin-left: 32px;
 }
 
@@ -211,6 +211,34 @@ border-radius: 32px;
 
 .review-descript {
 font-size: 20px;
+}
+
+
+
+.two-imgs {
+  border: 1px solid;
+  position: relative;
+  align-items: center;
+}
+
+.image-1, .image-2 {
+  width: 327px;
+  height: 370px;
+  border-radius: 16px;
+  object-fit: cover;
+  position: absolute;
+  
+}
+
+.image-1 {
+  right: 125px;
+  z-index: 2;
+}
+
+.image-2 {
+  top: 125px;
+  left: 75px;
+  z-index: 1;
 }
 
 footer {

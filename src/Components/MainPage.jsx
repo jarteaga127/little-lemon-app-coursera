@@ -1,6 +1,8 @@
 import SpecialsMenuCard from "./SpecialsMenuCard";
 import HeroImage from "../assets/restauranfood.jpg"
 import ReviewCard from "./ReviewCard";
+import RestaurantImg from "../assets/restaurant.jpg";
+import TwoChefs from "../assets/mario-and-adrian-c.jpg";
 
 const MainPage = () => {
     return ( 
@@ -41,7 +43,8 @@ const MainPage = () => {
                 <button className="main-btn">Read more about our story here</button>
                 </article>
                 <div className="two-imgs">
-                    
+                 <img src={RestaurantImg} alt="" className="image-1" />
+                 <img src={TwoChefs} alt="" className="image-2" />   
                 </div>
             </section>
         </main>
