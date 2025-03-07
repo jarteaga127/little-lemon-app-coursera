@@ -107,7 +107,7 @@ article {
   color: var(--secondary-color);
 }
 
-.hero-sec h2, .hero-sec p {
+.hero-sec h2, .hero-sec p,  {
   color: #fff;
 }
 
@@ -116,7 +116,7 @@ article {
   width: 443px;
 }
 
-.hero-sec p {
+.hero-sec p, .about-us p {
   margin-bottom: 56px;
 }
 
@@ -213,13 +213,16 @@ border-radius: 32px;
 font-size: 20px;
 }
 
-
+.about-us {
+  height: 551px;
+}
 
 .two-imgs {
-  border: 1px solid;
-  position: relative;
   align-items: center;
+  position: relative;
 }
+
+
 
 .image-1, .image-2 {
   width: 327px;
@@ -227,7 +230,6 @@ font-size: 20px;
   border-radius: 16px;
   object-fit: cover;
   position: absolute;
-  
 }
 
 .image-1 {
@@ -242,8 +244,8 @@ font-size: 20px;
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
   background-color: var(--main-color);
   width: 100%;
   padding: 18px 36px 72px;
