@@ -97,6 +97,8 @@ article {
   margin: auto;
 }
 
+
+
 .hero-sec {
   background-color: var(--main-color);
   width: 100%;
@@ -107,7 +109,7 @@ article {
   color: var(--secondary-color);
 }
 
-.hero-sec h2, .hero-sec p,  {
+.hero-sec h2, .hero-sec p  {
   color: #fff;
 }
 
@@ -273,4 +275,52 @@ footer h4 {
 }
 .footer-logo {
   height: 42px;
+}
+
+@media all and (max-width: 432px) {
+
+  nav ul {
+    display: none;
+  }
+
+  .hero-sec, .about-us {
+    display: grid;
+    grid-template-columns: auto;
+  } 
+
+  .hero-sec article {
+    margin: auto;
+  }
+
+  .our-specials article, .reviews article {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+
+  .specials-menu-card, .review-card {
+    margin-bottom: 32px;
+  }
+
+  .two-imgs {
+    align-items: center;
+    position: initial;
+  }
+  
+  .image-1 {
+    right: auto;
+    z-index: 1;
+  }
+  
+  .image-2 {
+    top: auto;
+    left: auto;
+    z-index: 1;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 18px 36px 72px;
+  }
 }
