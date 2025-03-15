@@ -1,5 +1,4 @@
 import RestaurantImg from "../assets/restaurant.jpg";
-import TwoChefs from "../assets/mario-and-adrian-c.jpg";
 
 const AboutUs = () => {
     return ( 
@@ -12,10 +11,7 @@ const AboutUs = () => {
                 <button className="main-btn">Read more about our story here</button>
                 </article>
                 <div className="img-contain-about">
-                <div className="two-imgs">
-                 <img src={RestaurantImg} alt="" className="image-1" />
-                 <img src={TwoChefs} alt="" className="image-2" />   
-                </div>
+                 <img src={RestaurantImg} alt="Inside of restaurant" />
                 </div>
             </section>
         </>

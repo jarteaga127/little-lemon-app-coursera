@@ -27,7 +27,7 @@ body, button, p {
 }
 
 body {
- width: 100%;
+ max-width: 100%;
 }
 
 nav {
@@ -97,8 +97,6 @@ article {
   margin: auto;
 }
 
-
-
 .hero-sec {
   background-color: var(--main-color);
   width: 100%;
@@ -114,7 +112,6 @@ article {
 }
 
 .hero-sec article {
-  margin-left: 219px;
   width: 443px;
 }
 
@@ -127,6 +124,7 @@ article {
   height: 500px;
   object-fit: cover;
   border-radius: 16px;
+  margin-left: 219px;
 }
 
 .our-specials, .reviews, .about-us {
@@ -145,13 +143,13 @@ article {
 }
 
 .specials-menu-card {
-  width: 327px;
+  max-width: 327px;
   border-radius: 16px 16px 0 0;
   background-color: #f5f5f5;
 }
 
 .special-menu-img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 16px 16px 0 0;
 }
 
@@ -184,7 +182,7 @@ article {
 }
 
 .review-card {
-  width: 327px;
+  max-width: 327px;
   border-radius: 16px 16px 0 0;
   background-color: #fff;
 padding: 8px 16px 32px;
@@ -215,35 +213,13 @@ border-radius: 32px;
 font-size: 20px;
 }
 
-.about-us {
-  height: 551px;
-}
-
-.two-imgs {
-  align-items: center;
-  position: relative;
-}
-
-
-
-.image-1, .image-2 {
-  width: 327px;
-  height: 370px;
-  border-radius: 16px;
+.img-contain-about img {
+  max-width: 500px;
+  max-height: 500px;
   object-fit: cover;
-  position: absolute;
+  border-radius: 16px; 
 }
 
-.image-1 {
-  right: 125px;
-  z-index: 2;
-}
-
-.image-2 {
-  top: 125px;
-  left: 75px;
-  z-index: 1;
-}
 
 footer {
   display: grid;
@@ -277,7 +253,37 @@ footer h4 {
   height: 42px;
 }
 
-@media all and (max-width: 432px) {
+@media screen and (max-width: 432px) {
+
+  body {
+    justify-content: center;
+  }
+
+  .main-btn {
+    max-width: 100%;
+  }
+
+  section h1 {
+    font-size: 64px;
+  }
+  
+  section h2 {
+  font-size: 36px;
+  }
+  
+  article {
+    padding: 9px 18px;
+  }
+
+  nav {
+    height: 56px;
+    padding: 9px 18px;
+  }
+
+  header img {
+    align-items: center;
+    height: 40px;
+  }
 
   nav ul {
     display: none;
@@ -286,36 +292,39 @@ footer h4 {
   .hero-sec, .about-us {
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
   } 
 
-  .hero-sec article {
-    margin: auto;
+  .hero-image {
+    width: 327px;
+    max-width: 100%;
+    justify-content: center;
+    margin: 9px 18px;
+  }
+
+  .hero-sec article, .about-us article {
+   margin: 9px 18px;
   }
 
   .our-specials article, .reviews article {
     display: grid;
     grid-template-columns: auto;
+    margin: 0 18px;
+  }
+
+  .our-specials, .reviews, .about-us {
+    padding-top: 18px;
+    padding-bottom: 56px;
   }
 
 
   .specials-menu-card, .review-card {
     margin-bottom: 32px;
   }
-
-  .two-imgs {
-    align-items: center;
-    position: initial;
-  }
   
-  .image-1 {
-    right: auto;
-    z-index: 1;
-  }
-  
-  .image-2 {
-    top: auto;
-    left: auto;
-    z-index: 1;
+  .img-contain-about img {
+    width: 394px;
+    max-width: fit-content;
   }
 
   footer {
