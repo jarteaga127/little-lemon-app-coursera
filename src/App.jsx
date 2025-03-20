@@ -13,7 +13,7 @@ function App() {
     <Nav/>
     <Routes>
       <Route path='/' element={<MainPage/>} />
-      <Route path='/book-a-table' element={<BookingPage/> }/>
+      <Route path='/book-a-table' element={<BookingPage/>}/>
     </Routes>
     
     <Footer/>

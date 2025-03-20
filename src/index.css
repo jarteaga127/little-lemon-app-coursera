@@ -21,7 +21,7 @@ h1, h2 {
 
 
 
-body, button, p {
+body, button, p, .booking-submit {
   font-family: var(--font-2);
   font-size: 20px;
 }
@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 
-.main-btn {
+.main-btn, .booking-submit {
   background-color: #f4ce14;
   border-radius: 16px;
   border: none;
@@ -69,7 +69,7 @@ nav a:hover {
   transition: .5s;
 }
 
-.main-btn:hover {
+.main-btn:hover, .booking-submit:hover {
   background-color: #EE9972;
   transition: .5s;
 }
@@ -132,7 +132,7 @@ article {
   padding-bottom: 190px;
 }
 
-.our-specials h2, .reviews h2, .about-us {
+.our-specials h2, .reviews h2, .about-us, .booking-page h2 {
   margin-left: 32px;
 }
 
@@ -251,6 +251,21 @@ footer h4 {
 }
 .footer-logo {
   height: 42px;
+}
+
+.booking-form {
+  display: grid;
+  max-width: 200px;
+  margin: 16px 32px 64px;
+  gap: 20px;
+}
+
+.booking-form label {
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 8px 16px;
 }
 
 @media screen and (max-width: 432px) {
